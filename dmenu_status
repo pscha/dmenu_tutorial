@@ -1,0 +1,2 @@
+#!/bin/sh
+sh /home/martensen/bin/scripts/status.sh |dmenu -i
