@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 memu(){
     memu="$(free -m | sed -n 's|^-.*:[ \t]*\([0-9]*\) .*|\1|gp')"
