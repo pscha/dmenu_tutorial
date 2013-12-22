@@ -1,13 +1,23 @@
 #!/bin/sh
+# a Script that makes an interactive statusbar by using dmenu
+
+
+# ACTION is going to be the menu item that has been selected by the user
 ACTION=`sh /home/martensen/bin/scripts/status.sh|dmenu -i`
+
+# to check which item has been selected we first print out the selected item
+# and run a grep afterward so we can select the actions to take. The Gep
+# command checks the first 3 or four letters(depends on the number of points)
+# so we'll see for example the "Net" from our status.sh
+
 if [ `echo $ACTION|grep -o "^..."`  == 'Net' ]; then
     #start network client script
 fi
 
+# Here are examples of starting a command line program in a new window
 #if [ `grep -o "^..."`  == 'Bat' ]; then
     #xterm -e powertop
     #urxvt -e powertop
-    #other
 #fi
 
 if [ `echo $ACTION|grep -o "^..."`  == 'Vol'  ]; then
