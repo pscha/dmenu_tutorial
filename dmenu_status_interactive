@@ -1,0 +1,19 @@
+#!/bin/sh
+ACTION=`sh /home/martensen/bin/scripts/status.sh|dmenu -i`
+if [ `echo $ACTION|grep -o "^..."`  == 'Net' ]; then
+    #start network client script
+fi
+
+#if [ `grep -o "^..."`  == 'Bat' ]; then
+    #xterm -e powertop
+    #urxvt -e powertop
+    #other
+#fi
+
+if [ `echo $ACTION|grep -o "^..."`  == 'Vol'  ]; then
+    st -e alsamixer
+fi
+
+if [ `echo $ACTION|grep -o "^...."`  == 'Time'  ]; then
+    ntpd
+fi
