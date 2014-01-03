@@ -4,12 +4,23 @@ dmenu_tutorial
 This is intended as a minimal tutorial about using dmenu as a multi-purpose menu and
 information bar.
 
-Needed for this is the program dmenu written by the suckless.org guys, and some
-practice in shell-scripting.
 
 First we will talk about the informative bar.
 
 Afterward you should try the menu options of dmenu.
+
+Needed stuff
+------------
+to create menus and other stuff with dmenu we'll need dmenu...
+
+Debian/Ubuntu/others
+    apt-get dmenu
+
+RedHat/Fedora
+    yum install dmenu
+
+Arch
+    pacman -S dmenu
 
 Informative bar
 ===============
