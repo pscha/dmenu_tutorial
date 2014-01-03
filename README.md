@@ -7,12 +7,13 @@ information bar.
 Needed for this is the program dmenu written by the suckless.org guys, and some
 practice in shell-scripting.
 
-First see the Information bar. There I'll tell you a bit about the basics.
+First we will talk about the informative bar.
 
 Afterward you should try the menu options of dmenu.
 
 Informative bar
-================
+===============
+
 The informative bar is going to show all the interesting informations such as
 Wifi, battery, or volume statuses.
 One might also create a informative bar about packagemanager informations,
@@ -46,6 +47,5 @@ Now all that is missing are the if causes that check which item has been
 selected and that launches applications,
 scripts or manipulates a daemon.
 
-Example:
---------
-
+For an example see the dmenu_mocp script by mutantturkey or the
+dmenu_status_interactive
