@@ -14,13 +14,13 @@ Needed stuff
 to create menus and other stuff with dmenu we'll need dmenu...
 
 Debian/Ubuntu/others
-    apt-get dmenu
+        apt-get dmenu
 
 RedHat/Fedora
-    yum install dmenu
+        yum install dmenu
 
 Arch
-    pacman -S dmenu
+        pacman -S dmenu
 
 Informative bar
 ===============
